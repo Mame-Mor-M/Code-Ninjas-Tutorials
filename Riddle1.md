@@ -22,7 +22,7 @@
 ```
 
 ```package
-malware_assets=github:Mame-Mor-M/Code-Ninjas-Tutorials/malware_assets
+malware_assets=github:Code-Ninjas-Tutorials/malware_assets
 ```
 
 # Codey's Shopping Spree
