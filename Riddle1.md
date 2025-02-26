@@ -1,3 +1,8 @@
+
+```package
+malware_assets=github:mame-mor-m/code-ninjas-tutorial/malware_assets
+```
+
 ```assetjson
 {
   "README.md": " \n\n\n> Open this page at [https://mame-mor-m.github.io/code-ninjas-tutorials/](https://mame-mor-m.github.io/code-ninjas-tutorials/)\n\n## Use as Extension\n\nThis repository can be added as an **extension** in MakeCode.\n\n* open [https://arcade.makecode.com/](https://arcade.makecode.com/)\n* click on **New Project**\n* click on **Extensions** under the gearwheel menu\n* search for **https://github.com/mame-mor-m/code-ninjas-tutorials** and import\n\n## Edit this project ![Build status badge](https://github.com/mame-mor-m/code-ninjas-tutorials/workflows/MakeCode/badge.svg)\n\nTo edit this repository in MakeCode.\n\n* open [https://arcade.makecode.com/](https://arcade.makecode.com/)\n* click on **Import** then click on **Import URL**\n* paste **https://github.com/mame-mor-m/code-ninjas-tutorials** and click import\n\n## Blocks preview\n\nThis image shows the blocks code from the last commit in master.\nThis image may take a few minutes to refresh.\n\n![A rendered view of the blocks](https://github.com/mame-mor-m/code-ninjas-tutorials/raw/master/.github/makecode/blocks.png)\n\n#### Metadata (used for search, rendering)\n\n* for PXT/arcade\n<script src=\"https://makecode.com/gh-pages-embed.js\"></script><script>makeCodeRender(\"{{ site.makecode.home_url }}\", \"{{ site.github.owner_name }}/{{ site.github.repository_name }}\");</script>\n",
@@ -21,9 +26,6 @@
 }
 ```
 
-```package
-malware_assets=github:Code-Ninjas-Tutorials/malware_assets
-```
 
 # Codey's Shopping Spree
 
