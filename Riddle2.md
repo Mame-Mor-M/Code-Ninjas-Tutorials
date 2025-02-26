@@ -1,3 +1,9 @@
+```template
+namespace SpriteKind {
+    export const OwnedItem = SpriteKind.create()
+}
+```
+
 # Time to Decorate!
 
 ## Time to Decorate! @showdialog
