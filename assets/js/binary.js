@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.59/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.60","target":"arcade","targetVersion":"1.12.59","repo":"mame-mor-m/code-ninjas-tutorials"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.59/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.61","target":"arcade","targetVersion":"1.12.59","repo":"mame-mor-m/code-ninjas-tutorials"}
 // total=1287812 new=8.55% cached=85.96% other=5.48%
 (function (ectx) {
 'use strict';
@@ -429,7 +429,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P27003(s) {
+function _main___P27113(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -893,13 +893,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P27003.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
-_main___P27003.continuations = [  ]
+_main___P27113.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"main.ts","functionName":"<main>","argumentNames":[]}
+_main___P27113.continuations = [  ]
 
-function _main___P27003_mk(s) {
+function _main___P27113_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P27003, depth: s.depth + 1,
+        parent: s, fn: _main___P27113, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -43293,5 +43293,5 @@ const sprites_BaseSpriteSayRenderer__C2260_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["transparency16___25782","tile1___25787","tile2___25792","tile3___25797","tile4___25802","tile5___25807","tile6___25812","tile7___25817","tile9___25822","tile10___25827","tile11___25832","tile12___25837","tile8___25842"])
 
-return _main___P27003
+return _main___P27113
 })
