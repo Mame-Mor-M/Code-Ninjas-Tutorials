@@ -58,11 +58,6 @@ THIS IS THE ANSWER TO THE RIDDLE
 namespace SpriteKind {
     export const OwnedItem = SpriteKind.create()
 }
-
-let Fake_Name = ""
-
-
-
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
     Shop_Sign.sayText("Welcome to the " + Fake_Name, 1000, false)
     sprite.setPosition(130, 250)
@@ -83,5 +78,8 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, ot
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
 })
+let Fake_Name = ""
+let Shop_Sign: Sprite = null
+tiles.setCurrentTilemap(tilemap`Store`)
 
 ```
