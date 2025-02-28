@@ -78,8 +78,16 @@ sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, ot
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
 })
-let Fake_Name = ""
-let Shop_Sign: Sprite = null
+
 tiles.setCurrentTilemap(tilemap`Store`)
+
+tiles.placeOnTile(Cody, tiles.getTileLocation(8, 4))
+Shop_Sign = sprites.create(assets.image`Sign`, SpriteKind.Enemy)
+tiles.placeOnTile(Shop_Sign, tiles.getTileLocation(9, 11))
+scene.cameraFollowSprite(Cody)
+controller.moveSprite(Cody)
+Fake_Name = "N1nnja Sh00p"
+tiles.placeOnTile(NinjaStar, tiles.getTileLocation(4, 7))
+
 
 ```
