@@ -1,4 +1,4 @@
-```template
+```block
 namespace SpriteKind {
     export const OwnedItem = SpriteKind.create()
 }
