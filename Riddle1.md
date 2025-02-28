@@ -59,18 +59,18 @@ namespace SpriteKind {
     export const OwnedItem = SpriteKind.create()
 }
 scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
-    Shop_Sign.sayText("Welcome to the " + Fake_Name, 1000, false)
+    Shop_Sign.sayText("Welcome to the " + Fake_Name)
     sprite.setPosition(130, 250)
 })
 scene.onOverlapTile(SpriteKind.Player, assets.tile`Door tile`, function (sprite, location) {
-    Shop_Sign.sayText("Welcome to the " + Fake_Name, 1000, false)
+    Shop_Sign.sayText("Welcome to the " + Fake_Name)
     sprite.setPosition(130, 225)
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
     if (info.score() < 4) {
         otherSprite.follow(sprite, 40)
         otherSprite.setKind(SpriteKind.OwnedItem)
-        sprite.sayText("Purchased: Ninja Star", 1000, false)
+        sprite.sayText("Purchased: Ninja Star")
     } else {
         otherSprite.sayText("Not enough coins")
     }
