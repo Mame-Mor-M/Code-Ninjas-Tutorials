@@ -22,6 +22,5 @@ The Dojo is finally complete and now it's time to decorate! Cody wants to place 
 
 Fix the code so that Cody can drop his decorations off at each designated location.
 
-
-## ANSWER @showdialog
-THE ANSWER IS ATTACK
+## CONGRATULATIONS!!! @showdialog
+You completed the second riddle! Make sure to submit your solution link on the Anniversary website, a sensei will check your submission ASAP!
