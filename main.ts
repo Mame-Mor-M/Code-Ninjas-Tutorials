@@ -1,134 +1,91 @@
 namespace SpriteKind {
-    export const Sign = SpriteKind.create()
-    export const Item = SpriteKind.create()
-    export const OwnedItem = SpriteKind.create()
+    export const Decoration = SpriteKind.create()
+    export const Obstacle = SpriteKind.create()
 }
-scene.onOverlapTile(SpriteKind.Player, assets.tile`myTile0`, function (sprite, location) {
-    Shop_Sign.sayText("Welcome to the " + Fake_Name, 1000, false)
-    sprite.setPosition(130, 250)
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Obstacle, function (sprite, otherSprite) {
+	
 })
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Item, function (sprite, otherSprite) {
-    if (info.score() < 4) {
-        otherSprite.follow(sprite, 40)
-        otherSprite.setKind(SpriteKind.OwnedItem)
-        sprite.sayText("Purchased: Ninja Star", 1000, false)
-    } else {
-        otherSprite.sayText("Not enough coins")
-    }
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Decoration, function (sprite, otherSprite) {
+    otherSprite.setImage(assets.image`Ninja Star`)
 })
-scene.onOverlapTile(SpriteKind.Player, assets.tile`Door tile`, function (sprite, location) {
-    Shop_Sign.sayText("Welcome to the " + Fake_Name, 1000, false)
-    sprite.setPosition(130, 225)
-})
-sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
-    info.changeScoreBy(1)
-})
-let Fake_Name = ""
-let Shop_Sign: Sprite = null
 tiles.setCurrentTilemap(tilemap`Store`)
-let Codey = sprites.create(img`
+let Cody = sprites.create(assets.image`Ninja`, SpriteKind.Player)
+tiles.placeOnTile(Cody, tiles.getTileLocation(5, 10))
+scene.cameraFollowSprite(Cody)
+controller.moveSprite(Cody)
+let Decoration1 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
+    . . . . . . . c . . . . . . . . 
+    . . . . c a a a c . . . . . . . 
+    . . . c c f a b b c . . . . . . 
+    . . . b f f b f a a . . . . . . 
+    . . . b b a b f f a . . . . . . 
+    . . . c b f b b a c . . . . . . 
+    . . . . b a f c c . . . . . . . 
+    . . . . . b b c . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Decoration)
+tiles.placeOnTile(Decoration1, tiles.getTileLocation(12, 3))
+let Decoration2 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
+    . . . . . . . c . . . . . . . . 
+    . . . . c a a a c . . . . . . . 
+    . . . c c f a b b c . . . . . . 
+    . . . b f f b f a a . . . . . . 
+    . . . b b a b f f a . . . . . . 
+    . . . c b f b b a c . . . . . . 
+    . . . . b a f c c . . . . . . . 
+    . . . . . b b c . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    `, SpriteKind.Player)
-tiles.placeOnTile(Codey, tiles.getTileLocation(8, 4))
-Shop_Sign = sprites.create(img`
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    `, SpriteKind.Sign)
-tiles.placeOnTile(Shop_Sign, tiles.getTileLocation(9, 11))
-scene.cameraFollowSprite(Codey)
-controller.moveSprite(Codey)
-Fake_Name = "N1nnja Sh00p"
-let Real_Shop_Name = "Ninja Shop"
-let NinjaStar = sprites.create(img`
+    `, SpriteKind.Decoration)
+tiles.placeOnTile(Decoration2, tiles.getTileLocation(12, 6))
+let Decoration3 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
+    . . . . . . . c . . . . . . . . 
+    . . . . c a a a c . . . . . . . 
+    . . . c c f a b b c . . . . . . 
+    . . . b f f b f a a . . . . . . 
+    . . . b b a b f f a . . . . . . 
+    . . . c b f b b a c . . . . . . 
+    . . . . b a f c c . . . . . . . 
+    . . . . . b b c . . . . . . . . 
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Decoration)
+tiles.placeOnTile(Decoration3, tiles.getTileLocation(12, 9))
+let Obstacle1 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
+    . . . . . . 3 3 3 3 3 3 3 3 . . 
+    . . . . . 3 c 3 3 3 3 3 3 d 3 . 
+    . . . . 3 c c 3 3 3 3 3 3 d c 3 
+    . . d 3 d c c 3 d d d d d d c c 
+    . d 3 3 d c b a a a a a a a 3 c 
+    . 3 3 3 d b a a b b b a b b a 3 
+    . 3 3 3 3 3 a b b b b a b b b a 
+    . 3 3 3 3 a 3 3 3 3 3 a 3 3 3 a 
+    . 3 d d 3 a f a a a f a a a a a 
+    . d d 3 a a a f a a f a a a a a 
+    . a a a a a a a f f f a a a a a 
+    . a a a a f f f a a a a f f f f 
+    . . . a f f f f f a a f f f f f 
+    . . . . f f f f . . . . f f f . 
     . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    . . . . . . . . . . . . . . . . 
-    `, SpriteKind.Item)
-tiles.placeOnTile(NinjaStar, tiles.getTileLocation(4, 7))
-let NinjaCoins = sprites.create(img`
-    . . . b b b . . 
-    . . b 5 5 5 b . 
-    . b 5 d 3 d 5 b 
-    . b 5 1 5 3 5 b 
-    . c d 1 5 3 5 c 
-    . c d d 1 d 5 c 
-    . . f d d d f . 
-    . . . f f f . . 
-    `, SpriteKind.Food)
-tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(4, 2))
-NinjaCoins = sprites.create(img`
-    . . . b b b . . 
-    . . b 5 5 5 b . 
-    . b 5 d 3 d 5 b 
-    . b 5 1 5 3 5 b 
-    . c d 1 5 3 5 c 
-    . c d d 1 d 5 c 
-    . . f d d d f . 
-    . . . f f f . . 
-    `, SpriteKind.Food)
-tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(8, 2))
-NinjaCoins = sprites.create(img`
-    . . . b b b . . 
-    . . b 5 5 5 b . 
-    . b 5 d 3 d 5 b 
-    . b 5 1 5 3 5 b 
-    . c d 1 5 3 5 c 
-    . c d d 1 d 5 c 
-    . . f d d d f . 
-    . . . f f f . . 
-    `, SpriteKind.Food)
-tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(14, 5))
-NinjaCoins = sprites.create(img`
-    . . . b b b . . 
-    . . b 5 5 5 b . 
-    . b 5 d 3 d 5 b 
-    . b 5 1 5 3 5 b 
-    . c d 1 5 3 5 c 
-    . c d d 1 d 5 c 
-    . . f d d d f . 
-    . . . f f f . . 
-    `, SpriteKind.Food)
-tiles.placeOnTile(NinjaCoins, tiles.getTileLocation(1, 5))
-info.setScore(0)
+    `, SpriteKind.Obstacle)
+tiles.placeOnTile(Obstacle1, tiles.getTileLocation(5, 4))
