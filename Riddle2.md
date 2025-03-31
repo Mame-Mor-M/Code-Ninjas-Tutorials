@@ -147,7 +147,7 @@ As Cody makes his way back to the centre he creates a map pinpointing the locati
 ## Step 1: It's a Mess in Here!
 Add more obstacle sprites around the dojo that Cody MUST avoid while decorating. Use the given assets or create sprites of objects you may see around the dojo.
 
-Note: Make sure AT LEAST 4 OBSTACLES exist around the dojo
+Make sure AT LEAST 4 OBSTACLES exist around the dojo
 ## Step 2: Make Obstacles Interactive
 The obstacles don't do anything! Edit the code to make sure overlapping an obstacle EITHER decreases player health OR resets their position to the starting point.
 
