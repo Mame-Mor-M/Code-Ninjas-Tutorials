@@ -1,19 +1,36 @@
+
 # The Hidden Belt Saga: White Belt 
 
 ## The Hidden Belt Saga: White Belt @showdialog
-A riddle under the missing white belt hints at its location. Ninjas, it's time to decode!
+A riddle under the hidden white belt hints at its location! Use the riddle and create a game that matches its description!
 
-## Step 1: Movement Basics
+**"If this happens, then that will too. Ninjas train here to move and fight for you. Find the place where actions begin, and ninjas start to spin!"**
 
-Load the provided project template and ensure Cody can move smoothly across the dojo.
+## Step 1: Create your Story
+During the Hidden Belt Saga, you will be able to show off your coding skills! Use the project requirements as a guideline and develop a unique game based on this weeks riddle.
 
-## Step 2: Add the Challenge
+Remember ninja, be creative! This project is meant to highlight how you understand the riddle.
 
-There's an obstacle in the way. Use conditionals to trigger animations and sound effects when Cody interacts with it.
+**Riddle: "If this happens, then that will too. Ninjas train here to move and fight for you. Find the place where actions begin, and ninjas start to spin!"**
 
-## Step 3: Reveal the White Belt
+**Project Requirements:**
+- Dialog box with game description
+- Player sprite with movement
+- Background scene OR tilemap
+- Music AND at least 2 sound effects
+- White belt sprite as the goal sprite
+- Win game when you collect white belt sprite (game over block)
+- At least 2 overlap containers
+- On game update container
+- At least 1 enemy sprite
+- Life AND score block
+- At least 2 conditionals (if/else blocks)
 
-Once Cody reaches the correct location, display the white belt on the screen.
 
-## ANSWER @showdialog
-THE ANSWER IS: Conditional Coding
+## Step 2: Important!!
+Great work ninja, but wait! You want to make sure you're submitting your best work!
+
+**Make sure the game is playable and there are no crucial bugs!**
+
+## CONGRATULATIONS!!! @showdialog
+You completed the fourth riddle! Make sure to submit your solution link on the Anniversary website, a sensei will check your submission ASAP!
