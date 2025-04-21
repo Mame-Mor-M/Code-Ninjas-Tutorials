@@ -20,14 +20,13 @@
         "Riddle3.md",
         "Riddle4.md",
         "Riddle5.md",
-        "Riddle6.md",
-        "Riddle7.md"
+        "Riddle6.md"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "2.0.48",
+        "target": "2.0.53",
         "targetId": "arcade"
     },
     "supportedTargets": [

@@ -2,19 +2,38 @@
 
 ## The Hidden Belt Saga: Yellow Belt @showdialog
 
-The next belt is hidden where ninjas train in neat rows—like grain in a field. Let's find it!
+A riddle under the missing yellow belt hints at its location! Use the riddle and create a game that matches its description!
+
+**"In rows and rows, ninjas grow. Each has its place, all in a row. Look for the farm where ninjas train, neatly lined up like grain."**
 
 ## Step 1: Create the Training Field
+Use the project requirements as a guideline and develop a unique game based on this weeks riddle.
 
-Use tilemaps to create a dojo training ground. Ensure ninjas are placed in organized rows.
+Remember ninja, be creative! This project is meant to highlight how you understand the riddle.
 
-## Step 2: Implement the Puzzle
+**"In rows and rows, ninjas grow. Each has its place, all in a row. Look for the farm where ninjas train, neatly lined up like grain."**
 
-Use arrays and loops to store and iterate through the locations of ninja trainees.
+**Project Requirements:**
+- Dialog box with game description
+- At least 1 loop block (besides on start block)
+- At least 1 array
+- At least 1 animation
+- Player sprite with movement
+- Tilemap for game level
+- Music AND at least 2 sound effects
+- Yellow belt sprite as the goal sprite
+- Win game when you collect yellow belt sprite (game over block)
+- At least 3 overlap containers
+- On game update container
+- At least 3 sprite kinds
+- Life AND score block
+- At least 3 conditionals (if/else blocks)
 
-## Step 3: Find the Yellow Belt
 
-Write a conditional that triggers the belt's appearance when the correct location is reached.
+## Step 2: Important!!
+Great work ninja, but wait! You want to make sure you're submitting your best work!
 
-## ANSWER @showdialog
-THE ANSWER IS: Tilemaps
+**Make sure the game is playable and there are no crucial bugs!**
+
+## CONGRATULATIONS!!! @showdialog
+You completed the fifth riddle! Make sure to submit your solution link on the Anniversary website, a sensei will check your submission ASAP!
